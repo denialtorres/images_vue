@@ -14,7 +14,7 @@ const actions = {
     const response = await api.fetchImages(token);
     commit("setImages", response.data.data);
   },
-  async uploadImages(images) {
+  async uploadImages(arg, images) {
     console.log(images);
   },
 };
