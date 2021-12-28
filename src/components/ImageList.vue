@@ -1,7 +1,6 @@
 <template>
   <div>
-    Image List
-    {{ allImages.length }}
+    <img v-for="image in allImages" :src="image.link" :key="image.id" />
   </div>
 </template>
 
